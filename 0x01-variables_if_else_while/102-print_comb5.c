@@ -16,7 +16,7 @@ putchar((t1 % 10) + '0');
 putchar(' ');
 putchar((t2 / 10) + '0');
 putchar((t2 % 10) + '0');
-if (t1 == 8 && t2 == 9)
+if (t1 == 98 && t2 == 99)
 continue;
 putchar(',');
 putchar(' ');
