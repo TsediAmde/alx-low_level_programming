@@ -8,7 +8,7 @@ int main(void)
 {
 int i = 0;
 char dec = '0';
-char hexas='a';
+char hexas = 'a';
 while (i < 16)
 {
 if (i <= 9)
