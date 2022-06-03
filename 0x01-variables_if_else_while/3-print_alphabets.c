@@ -8,12 +8,14 @@ int main(void)
 {
 char lower = 'a';
 char upper = 'A';
-while ((lower <= 'z')&&(upper <= 'Z'))
+while (lower <= 'z')
 {
 putchar (lower);
-putchar (upper);
-putchar ('\n');
 lower++;
+}
+while (upper <= 'Z')
+{
+putchar (upper);
 upper++;
 }
 return (0);
