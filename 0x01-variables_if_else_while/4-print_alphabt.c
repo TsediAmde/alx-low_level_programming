@@ -9,7 +9,7 @@ int main(void)
 char lower = 'a';
 while (lower <= 'z')
 {
-if((lower != 'e') && (lower != 'q'))
+if ((lower != 'e') && (lower != 'q'))
 {
 putchar (lower);
 }
