@@ -9,15 +9,18 @@ int main(void)
 int i = 0;
 char dec = '0';
 char hexas='a';
-while (i < 16){
-if (i <= 9){
+while (i < 16)
+{
+if (i <= 9)
+{
 putchar(dec);
 }
-else{
-putchar(hexas);
+else
+{
+putchar (hexas);
 hexas++;
 }
-dec++; 
+dec++;
 i++;
 }
 putchar ('\n');
