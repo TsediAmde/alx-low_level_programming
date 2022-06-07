@@ -5,6 +5,9 @@
 * Return: Always 0.
 */
 void print_alphabet(void)
+/**
+* this is the print alphabet function
+*/
 {
 char lower = 'a';
 while (lower <= 'z')
