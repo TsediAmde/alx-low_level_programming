@@ -1,11 +1,11 @@
 #include "main.h"
-void print_alphabet(void)
+/**
+* main - check the code
+*
+* Return: Always 0.
+*/
+int main(void)
 {
-char lower = 'a';
-while (lower < 'z')
-{
-_putchar(lower);
-lower++;
-}
-_putchar('\n');
+print_alphabet();
+return (0);
 }
