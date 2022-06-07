@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 /**
 * main - Entry point
 *
@@ -14,6 +13,6 @@ while (i<9)
 _putchar(puter[i]);
 i++;
 }
-_putchar('0' + '\n');
+_putchar('\n');
 return (0);
 }
