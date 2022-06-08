@@ -39,7 +39,7 @@ _putchar(' ');
 _putchar(' ');
 _putchar(' ');
 }
-else if (result <100)
+else if (result >9 && result < 100)
 {
 _putchar(',');
 _putchar(' ');
