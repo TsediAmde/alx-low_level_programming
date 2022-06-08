@@ -5,51 +5,31 @@
 */
 void print_times_table(int n)
 {
-int mult, incr, result, temp;
+int num, mult, result;
 if (n >= 0 && n <= 15)
 {
-for (incr = 0; incr <= n; incr++)
+for (num = 0; num <= n; num++)
 {
-for (mult = 0; mult <= n; mult++)
+_putchar('0');
+for (mult = 1; mult <= n; mult++)
 {
-result = incr * mult;
-if (mult != 0)
-{
+_putchar(',');
+_putchar(' ');
+result = num * mult;
+if (result <= 99)
+_putchar(' ');
 if (result <= 9)
+_putchar(' ');
+if (result >= 100)
 {
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar(' ');
+_putchar((result / 100) + '0');
+_putchar(((result / 10)) % 10 + '0');
 }
-else if (result > 9 && result < 100)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-}
-else
-{
-_putchar(',');
-_putchar(' ');
-}
-}
-if (result <= 9)
-{
-_putchar (result % 10 + '0');
-}
-else if (result < 100)
+else if (result <= 99 && result >= 10)
 {
 _putchar((result / 10) + '0');
-_putchar((result % 10) + '0');
 }
-else
-{
-temp = result / 10;
-_putchar((temp / 10) + '0');
-_putchar((temp % 10) + '0');
 _putchar((result % 10) + '0');
-}
 }
 _putchar('\n');
 }
