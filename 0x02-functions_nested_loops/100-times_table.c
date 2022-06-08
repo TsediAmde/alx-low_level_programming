@@ -32,10 +32,24 @@ _putchar((result % 10) + '0');
 }
 if(mult!=n)
 {
+if (result <= 9)
+{
 _putchar(','); 
 _putchar(' ');
 _putchar(' ');
 _putchar(' ');
+}
+else if (result <100)
+{
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+}
+else
+{
+_putchar(',');
+_putchar(' ');
+}
 }
 }
 _putchar('\n');
