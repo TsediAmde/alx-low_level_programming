@@ -8,7 +8,7 @@ int main(void)
 {
 int result = 0;
 int counter = 1;
-while(counter < 1024)
+while (counter < 1024)
 {
 if ((counter % 3 == 0) || (counter % 5 == 0))
 {
