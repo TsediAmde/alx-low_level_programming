@@ -38,7 +38,7 @@ _putchar(' ');
 if (result <= 9)
 {
 _putchar (result % 10 + '0');
-}      
+}
 else if (result < 100)
 {
 _putchar((result / 10) + '0');
@@ -46,7 +46,7 @@ _putchar((result % 10) + '0');
 }
 else
 {
-temp = result/10;
+temp = result / 10;
 _putchar((temp / 10) + '0');
 _putchar((temp % 10) + '0');
 _putchar((result % 10) + '0');
