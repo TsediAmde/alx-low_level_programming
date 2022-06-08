@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* print_times_table - prints the n times table, starting with 0 
-* @n: the fuctionparametr 
+* print_times_table - prints the n times table, starting with 0
+* @n: the fuctionparametr
 *
 */
 void print_times_table(int n)
@@ -14,7 +14,7 @@ for (incr = 0; incr <= n; incr++)
 for (mult = 0; mult <= n; mult++)
 {
 result = incr * mult;
-if(mult!=0)
+if (mult != 0)
 {
 if (result <= 9)
 {
@@ -23,7 +23,7 @@ _putchar(' ');
 _putchar(' ');
 _putchar(' ');
 }
-else if (result >9 && result < 100)
+else if (result > 9 && result < 100)
 {
 _putchar(',');
 _putchar(' ');
@@ -35,19 +35,18 @@ _putchar(',');
 _putchar(' ');
 }
 }
-
-if(result <= 9)
+if (result <= 9)
 {
 _putchar (result % 10 + '0');
 }      
-else if(result <100)
+else if (result < 100)
 {
 _putchar((result / 10) + '0');
 _putchar((result % 10) + '0');
 }
 else
 {
-temp=result/10;
+temp = result/10;
 _putchar((temp / 10) + '0');
 _putchar((temp % 10) + '0');
 _putchar((result % 10) + '0');
