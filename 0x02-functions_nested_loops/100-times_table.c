@@ -33,7 +33,9 @@ _putchar((result % 10) + '0');
 if(mult!=n)
 {
 _putchar(','); 
-_putchar(' '); 
+_putchar(' ');
+_putchar(' ');
+_putchar(' ');
 }
 }
 _putchar('\n');
