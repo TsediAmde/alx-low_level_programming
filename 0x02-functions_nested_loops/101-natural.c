@@ -18,4 +18,5 @@ counter++;
 }
 printf("%d", result);
 printf("\n");
+return (0);
 }
