@@ -3,7 +3,6 @@
 * print_diagnals - draws a diagonal line according to parameter
 * @n: The number of times to print diagonal line
 *
-* Return: empty
 */
 void print_diagonal(int n)
 {
