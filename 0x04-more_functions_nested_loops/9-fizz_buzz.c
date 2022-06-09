@@ -4,7 +4,7 @@
 * instead of multiple of 3, print Fizz
 * instead of multiple of 5, print Buzz
 * for multiple of 3 and 5, print FizzBuzz
-*
+(*
 * Return: 0 success
 */
 int main (void)
