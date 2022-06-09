@@ -3,26 +3,25 @@
 * print_diagnals - draws a diagonal line according to parameter
 * @n: The number of times to print diagonal line
 *
+* Return: empty
 */
 void print_diagonal(int n)
 {
-int i, j;
-if (n > 0)
+int x, y;
+if (n <= 0)
 {
-for (j = 1; j <= n; j++)
-{
-for (i = 1; i <= j; i++)
-{
-if (i != 1)
-_putchar(' ');
-if (i == j)
-{
-_putchar('\\');
 _putchar('\n');
-}
-}
-}
 }
 else
+{
+for (x = 0; x < n; x++)
+{
+for (y = 0; y < x; y++)
+{
+_putchar(32);
+}
+_putchar(92);
 _putchar('\n');
+}
+}
 }
