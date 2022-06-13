@@ -1,9 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* main - check the code
+* *_strcpy - function that copies the string pointed to by src
+* @dest: pointer to a string
+* @src: pointer to a buffer
 *
-* Return: Always 0.
+* Return: value of pointer to dest
 */
 char *_strcpy(char *dest, char *src)
 {
@@ -15,5 +17,5 @@ dest[i] = src[i];
 i++;
 }
 dest[i] = '\0';
-return(dest);
+return (dest);
 }
