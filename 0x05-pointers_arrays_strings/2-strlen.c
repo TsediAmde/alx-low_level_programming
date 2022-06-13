@@ -3,11 +3,12 @@
 #include <string.h>
 /**
 * _strlen - a function that returns the length of a string
+* @s: character parameter
 *
 * Return: result
 */
 int _strlen(char *s)
 {
-int result = strlen(s);
+int result = strlen (s);
 return(result);
 }
