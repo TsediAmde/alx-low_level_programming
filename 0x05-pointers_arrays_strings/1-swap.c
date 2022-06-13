@@ -2,6 +2,8 @@
 #include <stdio.h>
 /**
 * swap_int - function that swaps the values of two integers
+* @a: character parameter
+* @b: character parameter
 *
 * Return: Always 0.
 */
