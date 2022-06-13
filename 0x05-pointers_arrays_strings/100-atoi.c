@@ -4,7 +4,7 @@
 * _atoi -  function that convert a string to an integer
 * @s: string to covert
 *
-* Return: converted string 
+* Return: converted string
 */
 int _atoi(char *s)
 {
@@ -19,7 +19,7 @@ m *= -1;
 if (s[i] >= '0' && s[i] <= '9')
 {
 result *= 10;
-result -=(s[i] - '0');
+result -= (s[i] - '0');
 b = 1;
 }
 else if (b == 1)
