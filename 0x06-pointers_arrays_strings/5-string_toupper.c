@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
 * string_toupper - changes all lowercase letters of a string to uppercase
-*
+* @n: character parameter
 * Return: capitialized string
 */
 char *string_toupper(char *n)
