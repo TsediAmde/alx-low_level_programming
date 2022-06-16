@@ -1,10 +1,4 @@
 #include <stdio.h>
-/**
-* main - check the code
-*
-*
-* Return: Always 0.
-*/
 int main(void)
 {
 int n;
@@ -18,7 +12,7 @@ p = &n;
 * - you are not allowed to use a
 * - you are not allowed to modify p
 * - only one statement
-* - not allowed to code anything else than this line of code
+* - you are not allowed to code anything else than this line of code
 */
 *(p + 5) = 98;
 /* ...so that this prints 98\n */
