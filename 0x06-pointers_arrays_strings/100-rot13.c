@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 /**
 * rot13 - function that encodes a string using rot13
 * @s: character parameter
@@ -7,21 +9,28 @@
 * Return: s
 */
 char *rot13(char *s)
+{  
+char* res = malloc(strlen(s));
+char* current_char = res;
+if(res != NULL)
 {
-int a = 0;
-while (s[a])
+strcpy(res, s); 
+while(*current_char != '\0')
 {
-while ((s[a] >= 'a' && s[a] <= 'z') || (s[a] >= 'A' && s[a] <= 'Z'))
+if((*current_char >= 97 && *current_char <= 122) || (*current_char >= 65 && *current_char <= 90))
 {
-if ((s[a] > 'm' && s[a] <= 'z') || (s[a] > 'M' && s[a] <= 'Z'))
+if(*current_char > 109 || (*current_char > 77 && *current_char < 91))
 {
-s[a] -= 13;
-break;
+*current_char -= 13;
 }
-s[a] += 13;
-break;
+else
+{
+*current_char += 13;
 }
-a++;
 }
-return (s);
+current_char++;
+}
+}
+s = res;
+return res;
 }

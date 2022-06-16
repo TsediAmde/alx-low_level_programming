@@ -5,23 +5,23 @@
 *
 * Return: Always 0.
 */
-char *leet(char *string)
+char *leet(char *s)
 {
-int i;
-int j;
-char lower[] = "aeotl";
-char upper[] = "AEOTL";
-char number[] = "43071";
-for (i = 0; string[i] != '\0'; i++)
+int a = 0, b = 0, l = 5;
+char r[5] = {'A', 'E', 'O', 'T', 'L'};
+char n[5] = {'4', '3', '0', '7', '1'};
+while (s[a])
 {
-for (j = 0; lower[j] != '\0' && upper[j] != '\0'; j++)
+b = 0;
+while (b < l)
 {
-if (string[i] == lower[j] || string[i] == upper[j])
+if (s[a] == r[b] || s[a] - 32 == r[b])
 {
-string[i] = numbers[j];
-break;
+s[a] = n[b];
 }
+b++;
 }
+a++;
 }
-return (string);
+return (s);
 }
