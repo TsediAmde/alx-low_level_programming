@@ -2,10 +2,10 @@
 #include <stdio.h>
 /**
 * _strchr - function that locates a character in a string
-* @s: source memory
-* @c: number of bytes to be copied
+* @s: source string
+* @c: character to find
 *
-* Return: string copied from source
+* Return: string from character found
 */
 char *_strchr(char *s, char c)
 {
