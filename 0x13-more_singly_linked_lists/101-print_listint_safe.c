@@ -8,7 +8,7 @@
   */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t n = 0, i = 0;
+	size_t a = 0, b = 0;
 	const listint_t *loop;
 	const listint_t *h;
 
@@ -16,29 +16,29 @@ size_t print_listint_safe(const listint_t *head)
 	loop = head;
 	while (head)
 	{
-		printf("[%p] %d\n", (void *) head, head->n);
+		printf("[%p] %d\n", (void *) head, head->a);
 		if (head == head->next)
 		{
-			printf("-> [%p] %d\n", (void *) head, head->n);
-			n++;
+			printf("-> [%p] %d\n", (void *) head, head->a);
+			a++;
 			break;
 		}
 		head = head->next;
-		while (i < n && loop)
+		while (b < a && loop)
 		{
 			if (head == loop)
 			{
-				printf("-> [%p] %d\n", (void *) head, head->n);
+				printf("-> [%p] %d\n", (void *) head, head->a);
 				if (head != head->next)
-					n++;
-				return (n);
+					a++;
+				return (a);
 			}
 			loop = loop->next;
-			i++;
+			b++;
 		}
 		loop = h;
-		i = 0;
-		n++;
+		b = 0;
+		a++;
 	}
-	return (n);
+	return (a);
 }
